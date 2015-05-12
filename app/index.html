@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Birthday Calculator</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Birthday Calculator</h1>
+    <!-- Prefer paragraphs and other block level elements over breaks -->
+    <p>
+        Enter Birthday: <input type="date" id="txtBirthday" /></p>
+    <p>
+        <button id="btnAge">Display age in years and months</button></p>
+    <p>
+        <button id="btnDays">Display num of day til next bday</button></p>
+   
+    <div id="displayarea">
+        <p class="prompt">
+            Please enter a valid date.</p>
+        <p class="message">
+            You appear to be <span class="age">age</span> years old.</p>
+    </div>
+
+    <!-- Scripts should come after content, so as to not slow down the
+         renering... -->
+    <script src="scripts/lib/birthday.js"></script>
+    <script src="scripts/controller.js"></script>
+
+    <!--
+        Lab
+
+        1. Request date of birth from user and display the user age in years and months.
+        2. Display also the number of days until next birthday.
+    -->
+</body>
+</html>
